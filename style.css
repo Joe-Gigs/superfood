@@ -1,0 +1,313 @@
+body {
+  background-color: #ff4a78;
+  transition: background-color 10s ease;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: custom-font;
+  src: url(SUPERFOOD_ASSETS/FONTS/Francis Gothic Normal.ttf);
+}
+
+h3 {
+  font-family: custom-font;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 1.8em;
+	line-height: 1.3em;
+	letter-spacing: .7px;
+	margin-bottom: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#logo {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+/*.scene {
+  height: 100vh;
+}
+*/
+/*food*/
+#apple {
+  width: 75px;
+  height: 75px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#spaghetti {
+  width: 75px;
+  height: 75px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#croissant {
+  width: 75px;
+  height: 75px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#orange {
+  width: 75px;
+  height: 75px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#pizza {
+  width: 75px;
+  height: 75px;
+  margin-top: 40px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#cupcake {
+  width: 75px;
+  height: 75px;
+  margin-top: 40px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#soda {
+  width: 75px;
+  height: 75px;
+  margin-top: 40px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#cake {
+  width: 75px;
+  height: 75px;
+  margin-left: 67px;
+  animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+#logo-smaller {
+  height: 100px;
+  width: 320px;
+  display: none;
+}
+
+#logo-smaller.visible {
+  height: 100px;
+  width: 320px;
+  display: inline;
+}
+
+/*animation*/
+#line-1 {
+  margin-top: 89px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 0;
+    -webkit-transform: scale(0.9);
+       -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+}
+
+#line-1.visible {
+  margin-top: 89px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 1;
+  font-family: custom-font;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+}
+
+
+#line-2 {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 0;
+    -webkit-transform: scale(0.9);
+       -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+}
+
+#line-2.visible {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 1;
+  font-family: custom-font;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+}
+
+#line-3 {
+  margin-top: 18px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 0;
+    -webkit-transform: scale(0.9);
+       -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+}
+
+#line-3.visible {
+  margin-top: 18px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 1;
+  font-family: custom-font;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+}
+
+#line-4 {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 0;
+  font-family: custom-font;
+    -webkit-transform: scale(0.9);
+       -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+}
+
+#line-4.visible {
+  margin-top: 20px;
+  font-size: 50px;
+  color: #fffb00;
+  opacity: 1;
+    -webkit-transform: none;
+       -moz-transform: none;
+
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+}
+
+#mouth {
+  background: url('SUPERFOOD_ASSETS/SUPERFOOD_icons-10-sprite/SUPERFOOD_icons-10-sprite-R2-horizontal.png') no-repeat;
+  height: 120px;
+  margin: 20px;
+  background-size: 800%;
+  display: inline-block;
+  width: calc(500px / 6);
+  animation: playh 0.7s steps(6) infinite;
+}
+
+#mouth-reverse {
+  background: url('SUPERFOOD_ASSETS/SUPERFOOD_icons-10-sprite/SUPERFOOD_icons-10-sprite-R2-horizontal.png') no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: 120px;
+  /*margin: 20px;*/
+  background-size: 800%;
+  display: inline-block;
+  width: calc(500px / 6);
+  animation: playh 0.7s steps(6) infinite;
+}
+
+/*keyframes*/
+
+@keyframes fadein {
+  0% {
+    transform: scale(0.01);
+  }
+  10% {
+    transform: scale(0.02);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+}
+
+@keyframes playh {
+  from {
+    background-position: -11px 0;
+  }
+  to {
+    background-position: -673px 0;
+  }
+}
+
+@keyframes playv {
+  0% { 
+    background-position-y: 0px; 
+  }
+  100% { 
+    background-position-y: -301px; 
+  }
+}
