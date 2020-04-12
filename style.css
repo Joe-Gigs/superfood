@@ -1,5 +1,5 @@
 body {
-  background-color: #ff4a78;
+  background-color: #fd386b;
   transition: background-color 10s ease;
   margin: 0;
   padding: 0;
@@ -42,11 +42,17 @@ h3 {
   margin: auto;
 }
 
-/*.scene {
-  height: 100vh;
+#section2 {
+  background: #fd386b;
+  background:-webkit-linear-gradient(top, #fd386b, #fe0e4d);
+  background:-moz-linear-gradient(top, #fd386b, #fe0e4d);
+  background:-ms-linear-gradient(top, #fd386b, #fe0e4d);
+  background:-o-linear-gradient(top, #fd386b, #fe0e4d);
+  background:linear-gradient(to bottom, #fd386b, #fe0e4d);
 }
-*/
+
 /*food*/
+
 #apple {
   width: 75px;
   height: 75px;
@@ -136,126 +142,45 @@ h3 {
 }
 
 /*animation*/
-#line-1 {
+#line-1 > p {
   margin-top: 89px;
   font-size: 50px;
   color: #fffb00;
-  opacity: 0;
-    -webkit-transform: scale(0.9);
-       -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-         -o-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
+  margin-left: -80px;
 }
 
-#line-1.visible {
-  margin-top: 89px;
-  font-size: 50px;
-  color: #fffb00;
-  opacity: 1;
-  font-family: custom-font;
-    -webkit-transform: none;
-       -moz-transform: none;
-        -ms-transform: none;
-         -o-transform: none;
-            transform: none;
+.fp-viewing-1 #line-1 > p {
+  animation: slide-left 3s;
 }
 
-
-#line-2 {
+#line-2 > p {
   margin-top: 20px;
   font-size: 50px;
   color: #fffb00;
-  opacity: 0;
-    -webkit-transform: scale(0.9);
-       -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-         -o-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
 }
 
-#line-2.visible {
-  margin-top: 20px;
-  font-size: 50px;
-  color: #fffb00;
-  opacity: 1;
-  font-family: custom-font;
-    -webkit-transform: none;
-       -moz-transform: none;
-        -ms-transform: none;
-         -o-transform: none;
-            transform: none;
+.fp-viewing-1 #line-2 > p {
+   animation: slide-right 3s;
 }
 
-#line-3 {
+#line-3 > p {
   margin-top: 18px;
   font-size: 50px;
   color: #fffb00;
-  opacity: 0;
-    -webkit-transform: scale(0.9);
-       -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-         -o-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
 }
 
-#line-3.visible {
-  margin-top: 18px;
-  font-size: 50px;
-  color: #fffb00;
-  opacity: 1;
-  font-family: custom-font;
-    -webkit-transform: none;
-       -moz-transform: none;
-        -ms-transform: none;
-         -o-transform: none;
-            transform: none;
+.fp-viewing-1 #line-3 > p {
+  animation: slide-left 3s;
 }
 
-#line-4 {
+#line-4 > p {
   margin-top: 20px;
   font-size: 50px;
   color: #fffb00;
-  opacity: 0;
-  font-family: custom-font;
-    -webkit-transform: scale(0.9);
-       -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-         -o-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
 }
 
-#line-4.visible {
-  margin-top: 20px;
-  font-size: 50px;
-  color: #fffb00;
-  opacity: 1;
-    -webkit-transform: none;
-       -moz-transform: none;
-
-        -ms-transform: none;
-         -o-transform: none;
-            transform: none;
+.fp-viewing-1 #line-4 > p {
+  animation: slide-right 3s;
 }
 
 #mouth {
@@ -309,5 +234,27 @@ h3 {
   }
   100% { 
     background-position-y: -301px; 
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
