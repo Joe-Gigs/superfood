@@ -56,100 +56,101 @@ h3 {
 #apple {
   width: 75px;
   height: 75px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
 }
 
 #spaghetti {
   width: 75px;
   height: 75px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -o-animation: fadein 4s;
 }
 
 #croissant {
   width: 75px;
   height: 75px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 4.5s;
+  -moz-animation: fadein 4.5s;
+  -webkit-animation: fadein 4.5s;
+  -o-animation: fadein 4.5s;
 }
 
 #orange {
   width: 75px;
   height: 75px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
 }
 
 #pizza {
   width: 75px;
   height: 75px;
   margin-top: 40px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+  -o-animation: fadein 5s;
 }
 
 #cupcake {
   width: 75px;
   height: 75px;
   margin-top: 40px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 4.3s;
+  -moz-animation: fadein 4.3s;
+  -webkit-animation: fadein 4.3s;
+  -o-animation: fadein 4.3s;
 }
 
 #soda {
   width: 75px;
   height: 75px;
   margin-top: 40px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
 }
 
 #cake {
   width: 75px;
   height: 75px;
   margin-left: 67px;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s;
-  -webkit-animation: fadein 6s;
-  -o-animation: fadein 6s;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
 }
 
 #logo-smaller {
   height: 100px;
   width: 320px;
-  display: none;
+  /*display: none;*/
 }
 
-#logo-smaller.visible {
-  height: 100px;
-  width: 320px;
-  display: inline;
+.fp-viewing-1 #logo-smaller {
+  animation: slide-left 3s;
 }
 
 /*animation*/
 #line-1 > p {
-  margin-top: 89px;
+  margin-top: 90px;
   font-size: 50px;
   color: #fffb00;
-  margin-left: -80px;
+  /*margin-left: -80px;*/
+  /*position: absolute;
+  overflow: hidden;*/
 }
 
 .fp-viewing-1 #line-1 > p {
+  /*animation: marquee-line-1 3s;*/
   animation: slide-left 3s;
 }
 
@@ -186,7 +187,7 @@ h3 {
 #mouth {
   background: url('SUPERFOOD_ASSETS/SUPERFOOD_icons-10-sprite/SUPERFOOD_icons-10-sprite-R2-horizontal.png') no-repeat;
   height: 120px;
-  margin: 20px;
+  /*margin: 20px;*/
   background-size: 800%;
   display: inline-block;
   width: calc(500px / 6);
@@ -198,11 +199,17 @@ h3 {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: 120px;
-  /*margin: 20px;*/
+  position: absolute;
+  /*top: 85vh;*/
   background-size: 800%;
   display: inline-block;
   width: calc(500px / 6);
-  animation: playh 0.7s steps(6) infinite;
+  /*animation: playh 0.7s steps(6) infinite,marquee 6s;*/
+}
+
+.fp-viewing-1 #mouth-reverse {
+  /*animation: marquee 6s;*/
+  animation: playh 0.7s steps(6) infinite,marquee 6s;
 }
 
 /*keyframes*/
@@ -240,7 +247,7 @@ h3 {
 @keyframes slide-left {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   100% {
     opacity: 1;
@@ -251,10 +258,20 @@ h3 {
 @keyframes slide-right {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    top: 85vh;
+  
+  }
+  100% {
+    top: 155px;
   }
 }
