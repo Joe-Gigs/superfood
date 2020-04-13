@@ -88,7 +88,7 @@ $(document).ready(function() {
   function createFullpage() {
 
     let fullPage = new fullpage('#fullpage', {
-      scrollingSpeed: 1500
+      scrollingSpeed: 3000
     });
   }
 

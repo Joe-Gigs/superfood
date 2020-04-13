@@ -209,7 +209,7 @@ h3 {
 
 .fp-viewing-1 #mouth-reverse {
   /*animation: marquee 6s;*/
-  animation: playh 0.7s steps(6) infinite,marquee 6s;
+  animation: playh 0.7s steps(6) infinite,marquee 4s;
 }
 
 /*keyframes*/
