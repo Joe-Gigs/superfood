@@ -1,17 +1,26 @@
 body {
-  background-color: #fd386b;
+  background-color:#ff4a78;
   transition: background-color 10s ease;
   margin: 0;
   padding: 0;
 }
 
+.hamburger {
+  margin-left: 70vw;
+  margin-bottom: 50px;
+}
+
 @font-face {
-  font-family: custom-font;
-  src: url(SUPERFOOD_ASSETS/FONTS/Francis Gothic Normal.ttf);
+    font-family: 'francis_gothicnormal';
+    src: url('SUPERFOOD_ASSETS/FONTS/francis_gothic_normal-webfont.woff2') format('woff2'),
+         url('SUPERFOOD_ASSETS/FONTS/francis_gothic_normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h3 {
-  font-family: custom-font;
+  font-family: francis_gothicnormal, Arial, sans-serif;
 	font-weight:normal;
 	font-style:normal;
 	font-size: 1.8em;
@@ -28,7 +37,7 @@ h3 {
 }
 
 #logo {
-  max-height: 100%;
+  max-height: 130%;
   max-width: 100%;
   height: auto;
   width: auto;
@@ -39,23 +48,21 @@ h3 {
   left: 0;
   right: 0;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #section2 {
-  background: #fd386b;
-  background:-webkit-linear-gradient(top, #fd386b, #fe0e4d);
-  background:-moz-linear-gradient(top, #fd386b, #fe0e4d);
-  background:-ms-linear-gradient(top, #fd386b, #fe0e4d);
-  background:-o-linear-gradient(top, #fd386b, #fe0e4d);
-  background:linear-gradient(to bottom, #fd386b, #fe0e4d);
+  background: #ff4a78;
+  background:-webkit-linear-gradient(top, #ff4a78, #ff0e4c);
+  background:-moz-linear-gradient(top, #ff4a78, #ff0e4c);
+  background:-ms-linear-gradient(top, #ff4a78, #ff0e4c);
+  background:-o-linear-gradient(top, #ff4a78, #ff0e4c);
+  background:linear-gradient(to bottom, #ff4a78, #ff0e4c);
 }
 
 /*food*/
 
 #apple {
-  width: 75px;
-  height: 75px;
   animation: fadein 3s;
   -moz-animation: fadein 3s;
   -webkit-animation: fadein 3s;
@@ -63,8 +70,6 @@ h3 {
 }
 
 #spaghetti {
-  width: 75px;
-  height: 75px;
   animation: fadein 4s;
   -moz-animation: fadein 4s;
   -webkit-animation: fadein 4s;
@@ -72,8 +77,6 @@ h3 {
 }
 
 #croissant {
-  width: 75px;
-  height: 75px;
   animation: fadein 4.5s;
   -moz-animation: fadein 4.5s;
   -webkit-animation: fadein 4.5s;
@@ -81,8 +84,6 @@ h3 {
 }
 
 #orange {
-  width: 75px;
-  height: 75px;
   animation: fadein 3s;
   -moz-animation: fadein 3s;
   -webkit-animation: fadein 3s;
@@ -90,8 +91,6 @@ h3 {
 }
 
 #pizza {
-  width: 75px;
-  height: 75px;
   margin-top: 40px;
   animation: fadein 5s;
   -moz-animation: fadein 5s;
@@ -100,8 +99,6 @@ h3 {
 }
 
 #cupcake {
-  width: 75px;
-  height: 75px;
   margin-top: 40px;
   animation: fadein 4.3s;
   -moz-animation: fadein 4.3s;
@@ -110,8 +107,6 @@ h3 {
 }
 
 #soda {
-  width: 75px;
-  height: 75px;
   margin-top: 40px;
   animation: fadein 3s;
   -moz-animation: fadein 3s;
@@ -120,8 +115,6 @@ h3 {
 }
 
 #cake {
-  width: 75px;
-  height: 75px;
   margin-left: 67px;
   animation: fadein 2s;
   -moz-animation: fadein 2s;
@@ -137,20 +130,26 @@ h3 {
 
 .fp-viewing-1 #logo-smaller {
   animation: slide-left 3s;
+  margin-bottom: 50px;
+  margin-left: 42px;
+}
+
+.fp-viewing-0 #logo-smaller {
+  animation: slide-left-rev 2s;
 }
 
 /*animation*/
 #line-1 > p {
-  margin-top: 90px;
+  /*margin-top: 90px;*/
   font-size: 50px;
   color: #fffb00;
+  font-family: francis_gothicnormal, Arial, sans-serif;
   /*margin-left: -80px;*/
   /*position: absolute;
   overflow: hidden;*/
 }
 
 .fp-viewing-1 #line-1 > p {
-  /*animation: marquee-line-1 3s;*/
   animation: slide-left 3s;
 }
 
@@ -158,6 +157,7 @@ h3 {
   margin-top: 20px;
   font-size: 50px;
   color: #fffb00;
+  font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 .fp-viewing-1 #line-2 > p {
@@ -168,6 +168,7 @@ h3 {
   margin-top: 18px;
   font-size: 50px;
   color: #fffb00;
+  font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 .fp-viewing-1 #line-3 > p {
@@ -178,6 +179,7 @@ h3 {
   margin-top: 20px;
   font-size: 50px;
   color: #fffb00;
+  font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 .fp-viewing-1 #line-4 > p {
@@ -195,21 +197,31 @@ h3 {
 }
 
 #mouth-reverse {
-  background: url('SUPERFOOD_ASSETS/SUPERFOOD_icons-10-sprite/SUPERFOOD_icons-10-sprite-R2-horizontal.png') no-repeat;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  background: url('SUPERFOOD_ASSETS/SUPERFOOD_icons-10-sprite/SUPERFOOD_icons-10-sprite-R2-horizontal-flipped.png') no-repeat;
+  /*-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);*/
   height: 120px;
   position: absolute;
   /*top: 85vh;*/
   background-size: 800%;
   display: inline-block;
   width: calc(500px / 6);
-  /*animation: playh 0.7s steps(6) infinite,marquee 6s;*/
+  margin-left: 74px;
+  animation: playh 0.7s steps(6) infinite,marquee 6s;
 }
 
 .fp-viewing-1 #mouth-reverse {
   /*animation: marquee 6s;*/
   animation: playh 0.7s steps(6) infinite,marquee 4s;
+}
+
+.fp-viewing-0 #mouth-reverse {
+  animation: playh 0.7s steps(6) infinite,marquee-reverse 4s;
+}
+
+.food {
+  width: 90px;
+  height: 90px;
 }
 
 /*keyframes*/
@@ -235,15 +247,6 @@ h3 {
   }
 }
 
-@keyframes playv {
-  0% { 
-    background-position-y: 0px; 
-  }
-  100% { 
-    background-position-y: -301px; 
-  }
-}
-
 @keyframes slide-left {
   0% {
     opacity: 0;
@@ -252,6 +255,17 @@ h3 {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slide-left-rev {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%);
   }
 }
 
@@ -272,6 +286,15 @@ h3 {
   
   }
   100% {
-    top: 155px;
+    top: 185px;
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    top: 185px;
+  }
+  to {
+    top: 86vh;
   }
 }

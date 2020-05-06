@@ -83,6 +83,16 @@ $(document).ready(function() {
     easing: 'easeInOutSine'
   });
 
+  let reverseMouthAnimation = anime({
+    targets: "#mouth-reverse",
+    translateX: 100,
+    direction: 'alternate',
+    loop: true,
+    easing: 'easeInOutSine'
+    // translateX: -100,
+    
+  });
+
   createFullpage();
 
   function createFullpage() {
