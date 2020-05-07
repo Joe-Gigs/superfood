@@ -19,6 +19,14 @@ body {
 
 }
 
+.hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    /*margin-left: -60px;*/
+}
+
 h3 {
   font-family: francis_gothicnormal, Arial, sans-serif;
 	font-weight:normal;
@@ -131,7 +139,7 @@ h3 {
 .fp-viewing-1 #logo-smaller {
   animation: slide-left 3s;
   margin-bottom: 50px;
-  margin-left: 42px;
+  margin-left: -343px;
 }
 
 .fp-viewing-0 #logo-smaller {
@@ -206,13 +214,14 @@ h3 {
   background-size: 800%;
   display: inline-block;
   width: calc(500px / 6);
-  margin-left: 74px;
+  /*margin-left: 74px;*/
   animation: playh 0.7s steps(6) infinite,marquee 6s;
 }
 
 .fp-viewing-1 #mouth-reverse {
   /*animation: marquee 6s;*/
   animation: playh 0.7s steps(6) infinite,marquee 4s;
+  margin-left: -99px;
 }
 
 .fp-viewing-0 #mouth-reverse {
