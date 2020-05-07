@@ -6,9 +6,17 @@ body {
 }
 
 .hamburger {
-  margin-left: 70vw;
-  margin-bottom: 50px;
+  margin-left: 65vw;
 }
+
+.fp-viewing-1 .hamburger {
+  animation: opacityOnAndOff 3s;
+}
+
+.fp-viewing-0 .hamburger {
+  animation: opacityOnAndOff-rev 2s;
+}
+
 
 @font-face {
     font-family: 'francis_gothicnormal';
@@ -131,7 +139,7 @@ h3 {
 .fp-viewing-1 #logo-smaller {
   animation: slide-left 3s;
   margin-bottom: 50px;
-  margin-left: 42px;
+  /*margin-left: -342px;*/
 }
 
 .fp-viewing-0 #logo-smaller {
@@ -296,5 +304,23 @@ h3 {
   }
   to {
     top: 86vh;
+  }
+}
+
+@keyframes opacityOnAndOff {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityOnAndOff-rev {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0;
   }
 }
