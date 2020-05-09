@@ -97,11 +97,10 @@ $(document).ready(function() {
 
   function createFullpage() {
 
-    let fullPage = new fullpage('#fullpage', {
+ let fullPage = new fullpage('#fullpage', {
       scrollingSpeed: 3000
     });
   }
-
   $('#destroy').click(function() {
     $.fn.fullpage.destroy('all');
   });
@@ -109,5 +108,13 @@ $(document).ready(function() {
   $('#create').click(function() {
     createFullpage();
   });
+
+  let $target = $('.wrapper');
+  inView('.section').on('enter', function(el){
+  let color = $(el).attr('data-background-color');
+  $target.css('background-color', color );
+});
+    
+
 
 }); //end of jquery function

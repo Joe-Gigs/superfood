@@ -8,19 +8,22 @@
     <link rel="stylesheet" type="text/css" href="fullpage.min.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/in-view.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/fullpage.min.js"></script>
     <script src="js/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="js/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
+    <div class="wrapper">
     <div id="fullpage">
-      <div class="section" id="section1">
+      <div class="section" id="section1" data-background-color="#ff4a78">
+        <!-- --------------------------------------------------------- -->
         <div class="container">
           <div class="row">
             <div class="offset-1">
@@ -59,54 +62,56 @@
           </div>
         </div>
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="section2" data-background-color="#ff0e4c">
+        <!-- --------------------------------------------------------- -->
         <div class="container-fluid">
-           <div class="row second-screen-header">
+          <div class="row second-screen-header">
             <div class="col-xs-6 col-sm-3">
               <img id="logo-smaller" class="food" src="SUPERFOOD_ASSETS/LOGO/PNG/SUPERFOOD_logo_black.png"></img>
             </div>
             <div class="col-xs-6 col-sm-3">
               <div class="hamburger-menu" onclick="myFunction(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </div>
-
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
             </div>
           </div>
           <div class="row" >
-
-            <div id="mouth-reverse"></div>
-            </div>
-            <div class="row" >
-            <div class="offset-4 main-text" id="line-1">
+            <div class="offset-3 main-text" id="line-1">
+              <div id="mouth-reverse"></div>
               <p>YOU FEED LOTS & LOTS OF</p>
             </div>
           </div>
         </div>
-          <div class="row">
-            <div class="offset-4 main-text" id="line-2">
-              <p>PEOPLE, BUT HAVE YOU EVER</p>
-            </div>
+        <div class="container-fluid">
+        <div class="row">
+          <div class="offset-3 main-text" id="line-2">
+            <p>PEOPLE, BUT HAVE YOU EVER</p>
           </div>
-          <div class="row">
-            <div class="offset-4 main-text" id="line-3">
-              <p>THOUGHT ABOUT WHAT YOU</p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="offset-3 main-text" id="line-3">
+            <p>THOUGHT ABOUT WHAT YOU</p>
           </div>
-          <div class="row">
-            <div class="offset-4 main-text" id="line-4">
-              <p>FEED YOUR BRAND?</p>
-            </div>
           </div>
-          <div class="row">
-            <div class="offset-10">
-              <div id="mouth"></div>
-            </div>
+        </div>
+         <div class="container-fluid">
+        <div class="row">
+          <div class="offset-4 main-text" id="line-4">
+            <p>FEED YOUR BRAND?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-10">
+            <div id="mouth"></div>
           </div>
         </div>
       </div>
+      </div>
     </div>
+    </div>
+  </div>
   </body>
 </html>
 

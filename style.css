@@ -1,5 +1,5 @@
 body {
-  /*background-color:#ff4a78;*/
+  background-color:#ff4a78;
   transition: background-color 10s ease;
   margin: 0;
   padding: 0;
@@ -67,7 +67,7 @@ h3 {
   margin: 0 auto;
 }
 
-#section1 {
+/*#section1 {
   background: #ff4a78;
   background:-webkit-linear-gradient(top, #ff4a78, #ff0e4c);
   background:-moz-linear-gradient(top, #ff4a78, #ff0e4c);
@@ -75,9 +75,13 @@ h3 {
   background:-o-linear-gradient(top, #ff4a78, #ff0e4c);
   background:linear-gradient(to bottom, #ff4a78, #ff0e4c);
 }
-
-#section2 {
+*/
+/*#section2 {
   background: #ff0e4c
+}*/
+
+.second-screen-header {
+  margin-bottom: 104px;
 }
 
 /*food*/
@@ -149,7 +153,7 @@ h3 {
 }
 
 .main-text {
-  margin-left: 29vw;
+  margin-left: 24vw;
 }
 
 .fp-viewing-1 #logo-smaller {
@@ -178,7 +182,7 @@ h3 {
 }
 
 #line-2 > p {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
@@ -189,7 +193,7 @@ h3 {
 }
 
 #line-3 > p {
-  margin-top: 18px;
+  /*margin-top: 18px;*/
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
@@ -200,7 +204,7 @@ h3 {
 }
 
 #line-4 > p {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
@@ -210,14 +214,19 @@ h3 {
   animation: slide-right 3s;
 }
 
+p {
+  margin-top: -14px;
+  letter-spacing: 1px;
+}
+
 #mouth {
   background: url('SUPERFOOD_ASSETS/SUPERFOOD_icons-10-sprite/SUPERFOOD_icons-10-sprite-R2-horizontal.png') no-repeat;
-  height: 120px;
+  height: 145px;
   /*margin: 20px;*/
-  background-size: 800%;
+  background-size: 748%;
   display: inline-block;
-  width: calc(500px / 6);
-  animation: playh 0.7s steps(6) infinite;
+  width: calc(768px / 6);
+  animation: playh 0.6s steps(4) infinite;
 }
 
 #mouth-reverse {
@@ -230,7 +239,7 @@ h3 {
   background-size: 800%;
   display: inline-block;
   width: calc(500px / 6);
-  margin-left: 74px;
+  margin-left: -18vw;
   /*animation: playh 0.7s steps(6) infinite,marquee 6s;*/
 }
 
@@ -245,6 +254,17 @@ h3 {
 .food {
   width: 90px;
   height: 90px;
+}
+
+.wrapper {
+  transition: background 1s ease-in;
+}
+
+.section {
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*keyframes*/
