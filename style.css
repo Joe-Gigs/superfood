@@ -7,6 +7,7 @@ body {
 
 .hamburger-menu {
   margin-left: 67vw;
+  margin-top: 2vh;
 }
 
 .bar1, .bar2, .bar3 {
@@ -81,7 +82,8 @@ h3 {
 }*/
 
 .second-screen-header {
-  margin-bottom: 104px;
+  /*margin-bottom: 104px;*/
+  margin-bottom: 12vh;
 }
 
 /*food*/
@@ -147,7 +149,7 @@ h3 {
 }
 
 #logo-smaller {
-  height: 100px;
+  height: 84px;
   width: 320px;
   /*display: none;*/
 }
@@ -159,7 +161,7 @@ h3 {
 .fp-viewing-1 #logo-smaller {
   animation: slide-left 3s;
   margin-bottom: 50px;
-  /*margin-left: -342px;*/
+  margin-left: 2vw;
 }
 
 .fp-viewing-0 #logo-smaller {
@@ -257,7 +259,7 @@ p {
 }
 
 .wrapper {
-  transition: background 1s ease-in;
+  transition: background 1.3s ease-in;
 }
 
 .section {
