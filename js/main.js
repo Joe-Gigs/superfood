@@ -101,6 +101,7 @@ $(document).ready(function() {
       scrollingSpeed: 3000
     });
   }
+  
   $('#destroy').click(function() {
     $.fn.fullpage.destroy('all');
   });
