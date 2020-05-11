@@ -56,11 +56,23 @@ body {
      box-sizing: border-box;
      margin: 0 auto;
 }
- .second-screen-header {
-    /*margin-bottom: 104px;
-    */
-     margin-bottom: 12vh;
+ .header {
+    /*margin-bottom: 12vh;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
 }
+
+/*.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}*/
 /*food*/
  #apple {
      animation: fadein 3s;
@@ -124,13 +136,13 @@ body {
      margin-left: 24vw;
 }
  .fp-viewing-1 #logo-smaller {
-     animation: slide-left 3s;
+     /*animation: slide-left 3s;*/
      margin-bottom: 50px;
      margin-left: 2vw;
 }
- .fp-viewing-0 #logo-smaller {
+/* .fp-viewing-0 #logo-smaller {
      animation: slide-left-rev 2s;
-}
+}*/
 /*animation*/
  #line-1 > p {
     /*margin-top: 90px;
