@@ -123,14 +123,14 @@ body {
  .main-text {
      margin-left: 24vw;
 }
- .fp-viewing-1 #logo-smaller {
+/* .fp-viewing-1 #logo-smaller {
      animation: slide-left 3s;
      margin-bottom: 50px;
      margin-left: 2vw;
 }
  .fp-viewing-0 #logo-smaller {
      animation: slide-left-rev 2s;
-}
+}*/
 /*animation*/
  #line-1 > p {
     /*margin-top: 90px;
@@ -225,6 +225,32 @@ body {
      justify-content: center;
      align-items: center;
 }
+
+.clearfix:after {
+  clear: both;
+}
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.header-top {
+  height: 70px;
+  padding: 0 67px;
+  position: fixed;
+  top: 23px;
+  width: 100%;
+  z-index: 12;
+  box-sizing: border-box;
+}
+
+
+
+
 /*keyframes*/
  @keyframes fadein {
      0% {
