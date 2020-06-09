@@ -15,114 +15,220 @@
     <script src="js/fullpage.min.js"></script>
     <script src="js/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
     <div class="wrapper">
-    <header>
-      <div class="header-top clearfix">
-      <img id="logo-smaller" class="l-left" class="food" src="SUPERFOOD_ASSETS/LOGO/PNG/SUPERFOOD_logo_black.png"></img>
-      <a class="l-right .hamburger-menu" href="#">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </a>
+      <header>
+        <div class="header-top clearfix">
+          <img id="logo-smaller" class="l-left" class="food" src="SUPERFOOD_ASSETS/LOGO/PNG/SUPERFOOD_logo_black.png"></img>
+          <a class="l-right .hamburger-menu" href="#">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
+        </div>
+      </header>
+      <div id="fullpage">
+        <div class="section" id="section1" data-background-color="#ff4a78">
+          <!-- --------------------------------------------------------- -->
+          <div class="container">
+            <div class="row">
+              <div class="offset-1">
+                <img id="spaghetti" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-04.png"></img>
+              </div>
+              <div class="offset-3">
+                <img id="croissant" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-09.png"></img>
+              </div>
+              <div class="offset-4">
+                <img id="orange" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-02.png"></img>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------------------------------------- -->
+          <div class="container">
+            <div class="row">
+              <img id="apple" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-01.png"></img>
+              <img id="logo" class="food" src="SUPERFOOD_ASSETS/LOGO/SUPERFOOD_digital_logo_R2_commpressed@2x.gif"></img>
+              <div class="offset-9">
+                <img id="cake" class="food"src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-05.png"></img>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------------------------------------- -->
+          <div class="container">
+            <div class="row">
+              <div class="offset-1">
+                <img id="pizza" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-08.png"></img>
+              </div>
+              <div class="offset-3">
+                <img id="cupcake" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-06.png"></img>
+              </div>
+              <div class="offset-4">
+                <img id="soda" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-07.png"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="section2" data-background-color="#ff0e4c">
+          <!-- --------------------------------------------------------- -->
+          <div class="container-fluid">
+            <div class="row second-screen-header">
+              <!--  -->
+            </div>
+            <div class="row" >
+              <div class="offset-3 main-text" id="line-1">
+                <div id="mouth-reverse"></div>
+                <p>YOU FEED LOTS & LOTS OF</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-3 main-text" id="line-2">
+                <p>PEOPLE, BUT HAVE YOU EVER</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-3 main-text" id="line-3">
+                <p>THOUGHT ABOUT WHAT YOU</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-4 main-text" id="line-4">
+                <p>FEED YOUR BRAND?</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-10">
+                <div id="mouth"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of section two -->
+        <div class="section" id="section3" data-background-color="#ee2316">
+          <div class="container-fluid">
+            <div class="row" >
+              <div class="offset-6">
+                <div id="mouth-reverse"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="peach-text" id="actually">
+                <p>ACTUALLY,</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="peach-text" id="our-job">
+                <p>THAT'S OUR JOB.</p>
+              </div>
+              <div class="offset-8">
+                <div id="mouth"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-4">
+                <div id="mouth"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of section 3 -->
+        <div class="section" id="section4" data-background-color="#ffa626">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-3 main-text" id="line-5">
+                <img id="apple-fp3-1" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-01.png"></img>
+                <p>WE'RE SUPERFOOD DIGITAL</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-3 main-text" id="line-6">
+                <p>A 100% FOOD & BEVERAGE</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-3 main-text" id="line-7">
+                <p>MOTIVATED, BIG APPLE BASED,</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="offset-4 main-text" id="line-8">
+                <p>DIGITAL MARKETING FIRM.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-1">
+                <img id="apple-fp3-2" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-01.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-8">
+                <img id="apple-fp3-3" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-01.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of section 4 -->
+        <div class="section" id="section5" data-background-color="#feff01">
+          <!-- burger pieces -->
+          <button type="button" id="test-btn" class="btn btn-danger">Collapse Burger(For testing)</button>
+          <div id="whole-burger">
+            <div class="container">
+              <div class="row">
+                <img id="bun-top" src="SUPERFOOD_ASSETS/ICONS/BURGER_PARTS/burger_layers_buntop.png"></img> 
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <img id="tomato" src="SUPERFOOD_ASSETS/ICONS/BURGER_PARTS/burger_layers_tomato.png"></img>
+                <p class="burger-copy">Drive site visits</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <img id="cheese" src="SUPERFOOD_ASSETS/ICONS/BURGER_PARTS/burger_layers_cheese.png"></img>
+                <p class="burger-copy">Boost content performace</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <img id="burger-patty" src="SUPERFOOD_ASSETS/ICONS/BURGER_PARTS/burger_layers_meat.png"></img>
+                <p class="burger-copy">Up your ROI</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <img id="lettuce" src="SUPERFOOD_ASSETS/ICONS/BURGER_PARTS/burger_layers_lettuce.png"></img>
+                <p class="burger-copy">Grow e-commerce</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <img id="bun-bottom" src="SUPERFOOD_ASSETS/ICONS/BURGER_PARTS/burger_layers_bunbottom.png"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of section 5 -->
+      </div>
     </div>
-    </header>
-    <div id="fullpage">
-      <div class="section" id="section1" data-background-color="#ff4a78">
-        <!-- --------------------------------------------------------- -->
-        <div class="container">
-          <div class="row">
-            <div class="offset-1">
-              <img id="spaghetti" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-04.png"></img>
-            </div>
-            <div class="offset-3">
-              <img id="croissant" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-09.png"></img>
-            </div>
-            <div class="offset-4">
-              <img id="orange" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-02.png"></img>
-            </div>
-          </div>
-        </div>
-        <!-- --------------------------------------------------------- -->
-        <div class="container">
-          <div class="row">
-            <img id="apple" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-01.png"></img>
-            <img id="logo" class="food" src="SUPERFOOD_ASSETS/LOGO/SUPERFOOD_digital_logo_R2_commpressed@2x.gif"></img>
-            <div class="offset-9">
-              <img id="cake" class="food"src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-05.png"></img>
-            </div>
-          </div>
-        </div>
-        <!-- --------------------------------------------------------- -->
-        <div class="container">
-          <div class="row">
-            <div class="offset-1">
-              <img id="pizza" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-08.png"></img>
-            </div>
-            <div class="offset-3">
-              <img id="cupcake" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-06.png"></img>
-            </div>
-            <div class="offset-4">
-              <img id="soda" class="food" src="SUPERFOOD_ASSETS/ICONS/FOOD/SUPERFOOD_icons-07.png"></img>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="section2" data-background-color="#ff0e4c">
-        <!-- --------------------------------------------------------- -->
-        <div class="container-fluid">
-          <div class="row second-screen-header">
-            <!--       <div class="col-xs-6 col-sm-3">
-              <img id="logo-smaller" class="food" src="SUPERFOOD_ASSETS/LOGO/PNG/SUPERFOOD_logo_black.png"></img>
-              </div>
-              <div class="col-xs-6 col-sm-3">
-              <div class="hamburger-menu" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-              </div> -->
-          </div>
-          <div class="row" >
-            <div class="offset-3 main-text" id="line-1">
-              <div id="mouth-reverse"></div>
-              <p>YOU FEED LOTS & LOTS OF</p>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="offset-3 main-text" id="line-2">
-              <p>PEOPLE, BUT HAVE YOU EVER</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="offset-3 main-text" id="line-3">
-              <p>THOUGHT ABOUT WHAT YOU</p>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="offset-4 main-text" id="line-4">
-              <p>FEED YOUR BRAND?</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="offset-10">
-              <div id="mouth"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End of section two -->
-      <div class="section" id="section3" data-background-color="#ee2316">
-      </div>
     </div>
   </body>
 </html>
-
