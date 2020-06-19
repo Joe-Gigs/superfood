@@ -155,6 +155,8 @@ $(document).ready(function() {
 
   completeBurger.forEach(element => element.hide());
 
+  let $finalBurger = $('#final-burger')
+
   //The afterLoad callback is fired once a section is loaded and the onLeave callback once a user leaves it.
   let showBurger = false;
 
@@ -213,13 +215,27 @@ $(document).ready(function() {
           break;
         case 4:
           collapseBurger();
+            // $finalBurger.delay(1000).show(400);
 
-      }
+
+            // $finalBurger.animate({
+            //      opacity: '1'
+            // }, 5000)
+
+            // $finalBurger.css({'opacity':1})
+
+          }
     },
     afterLoad: function(origin, direction, destination) {
       switch (origin.index) {
         case 4:
+          $finalBurger.css({'opacity':1})
 
+        $finalBurger.animate({
+                 bottom: '-=80vh'
+            }, 500)
+          
+        
       }
 
     }

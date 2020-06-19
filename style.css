@@ -20,6 +20,7 @@ body {
   transition: 0.4s;
 }
 
+
 /*.fp-viewing-1 .hamburger-menu {
   animation: opacityOnAndOff 3s;
 }
@@ -28,6 +29,7 @@ body {
   animation: opacityOnAndOff-rev 2s;
 }
 */
+
 @font-face {
   font-family: 'francis_gothicnormal';
   src: url('SUPERFOOD_ASSETS/FONTS/francis_gothic_normal-webfont.woff2') format('woff2'), url('SUPERFOOD_ASSETS/FONTS/francis_gothic_normal-webfont.woff') format('woff');
@@ -37,12 +39,10 @@ body {
 
 @font-face {
   font-family: 'tradegothiclt', sans-serif;
-
 }
 
 @font-face {
   font-family: 'tradegothiclt-bold', sans-serif;
-
 }
 
 h3 {
@@ -151,6 +151,7 @@ h3 {
   width: 320px;
 }
 
+
 /*.fp-viewing-0 .header-top  {
   display: none;
   opacity: 0;
@@ -168,61 +169,61 @@ h3 {
   /*transition: all 1s linear;*/
 }
 
-#line-1 > p {
+#line-1>p {
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-.fp-viewing-1 #line-1 > p {
+.fp-viewing-1 #line-1>p {
   animation: slide-left 3s;
 }
 
-#line-2 > p {
+#line-2>p {
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-.fp-viewing-1 #line-2 > p {
+.fp-viewing-1 #line-2>p {
   animation: slide-right 3s;
 }
 
-#line-3 > p {
+#line-3>p {
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-.fp-viewing-1 #line-3 > p {
+.fp-viewing-1 #line-3>p {
   animation: slide-left 3s;
 }
 
-#line-4 > p {
+#line-4>p {
   font-size: 50px;
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-#line-5 > p {
+#line-5>p {
   font-size: 50px;
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-#line-6 > p {
+#line-6>p {
   font-size: 50px;
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-#line-7 > p {
+#line-7>p {
   font-size: 50px;
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-#line-8 > p {
+#line-8>p {
   font-size: 50px;
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
@@ -232,14 +233,14 @@ h3 {
   margin-left: 24vw;
 }
 
-.peach-text > p {
+.peach-text>p {
   font-size: 50px;
   color: #FFC8A9;
   font-family: francis_gothicnormal, Arial, sans-serif;
   margin-left: 14vw;
 }
 
-.fp-viewing-1 #line-4 > p {
+.fp-viewing-1 #line-4>p {
   animation: slide-right 3s;
 }
 
@@ -310,14 +311,23 @@ p {
   margin-top: 33vh;
 }
 
-.fp-viewing-2 #actually > p {
+.fp-viewing-2 #actually>p {
   animation: slide-left 3s;
 }
-#our-job {
 
+#our-job {}
+
+.increases {
+  position: absolute;
+  top:10vh;
 }
 
-.fp-viewing-2 #our-job > p {
+.sales {
+  position: absolute;
+  top:18vh;
+}
+
+.fp-viewing-2 #our-job>p {
   animation: slide-right 3s;
 }
 
@@ -342,7 +352,9 @@ p {
   width: 170px;
 }
 
+
 /*-----------BURGER----------------------*/
+
 #bun-top {
   width: 520px;
   height: 137px;
@@ -422,11 +434,12 @@ p {
 }
 
 .burger-copy {
-    font-family: 'tradegothiclt-bold', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ee2316;
+  font-family: 'tradegothiclt-bold', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ee2316;
 }
+
 .burger-copy::after {
   display: inline-block;
   content: "";
@@ -436,16 +449,14 @@ p {
   transform: translateY(-1rem);
 }
 
-
-
 #final-burger {
-    position: absolute;
-    bottom: 33vh;
-    right: 38vw;
-    width: 24vw;
+  position: absolute;
+  bottom: 100vh;
+  right: 38vw;
+  width: 24vw;
+  /*display: none;*/
+  opacity: 0;
 }
-  
-
 
 #test-btn {
   position: relative;
