@@ -131,12 +131,11 @@ $(document).ready(function() {
   });
 
 
-  let $nav = $('.header-top');
+  let $nav = $('.header-top'); // NEED TO WORK ON THIS NEXT
   $nav.hide();
 
-  createFullpage();
 
-  let gifBurger = "SUPERFOOD_ASSETS/GIFS/burger-render-pixelart.gif";
+  // let gifBurger = "SUPERFOOD_ASSETS/GIFS/burger-render-pixelart.gif";
 
   let $burgerBunTop = $('#bun-top');
   let $tomato = $('#tomato');
@@ -156,50 +155,89 @@ $(document).ready(function() {
 
   completeBurger.forEach(element => element.hide());
 
-  function createFullpage() {
+  //The afterLoad callback is fired once a section is loaded and the onLeave callback once a user leaves it.
+  let showBurger = false;
 
-    const fullPage = new fullpage('#fullpage', {
-      scrollingSpeed: 3000,
+  //+ = down
 
-      onLeave: function(origin, direction) {
+  function collapseBurger() {
+    // $burgerBunTop.animate({
+    //   top: "0"
+    // },100)
 
-        console.log(origin.index);
+    $tomato.animate({
+      top: "-=6vh"
+    }, 300)
 
-        if (origin.index == 0) {
-          $nav.delay(800).show(400);
-        } else if (origin.index == 1 && direction == 'up') {
-          $nav.hide(1000);
-        }
+    $cheese.animate({
+      top: "-=13vh"
+    }, 300)
 
-        if (origin.index == 3) {
-          $burgerBunTop.delay(800).show(400);
-          $tomato.delay(1000).show(400);
-          $cheese.delay(1200).show(400);
-          $burgerPatty.delay(1400).show(400);
-          $lettuce.delay(1600).show(400);
-          $burgerBunBottom.delay(1800).show(400);
+    $burgerPatty.animate({
+      top: "-=21vh",
+      height: "68px"
+    }, 300)
 
-        } else if (origin.index > 3) {
-          $burgerBunTop.delay(800).hide(100);
-          $tomato.delay(700).hide(100);
-          $cheese.delay(600).hide(100);
-          $burgerPatty.delay(500).hide(100);
-          $lettuce.delay(400).hide(100);
-          $burgerBunBottom.delay(300).hide(100);
-        }
+    $lettuce.animate({
+      top: "-=33vh"
+    }, 300)
+
+    $burgerBunBottom.animate({
+      top: "-=41vh"
+    }, 300)
+
+  };
+
+  const fullPage = new fullpage('#fullpage', {
+    scrollingSpeed: 3000,
+
+    onLeave: function(origin, destination, direction) {
+      console.log('origin:', origin.index);
+      console.log('destination:', destination.index);
+      console.log('direction:', direction)
+      console.log(showBurger);
+      switch (origin.index) {
+        case 3:
+          if (direction == 'down') {
+
+            showBurger = false;
+            $burgerBunTop.delay(400).show(400);
+            $tomato.delay(600).show(400);
+            $cheese.delay(800).show(400);
+            $burgerPatty.delay(1000).show(400);
+            $lettuce.delay(1200).show(400);
+            $burgerBunBottom.delay(1400).show(400);
+            showBurger = true;
+
+          }
+          break;
+        case 4:
+          collapseBurger();
+
       }
-    });
-  }
+    },
+    afterLoad: function(origin, direction, destination) {
+      switch (origin.index) {
+        case 4:
+
+      }
+
+    }
+  });
+
 
   const btn = document.getElementById('test-btn');
   let wholeBurger = document.getElementById('whole-burger');
-  collapseBurger();
 
-  function collapseBurger() {
-      $(btn).on('click', function() {
-        $(wholeBurger).html('<img id="gif-burger" src="SUPERFOOD_ASSETS/GIFS/burger-render-pixelart.gif" />');   
-      })
-  };
+  function toggleGif() {
+    console.log('function working');
+    let x = new Freezeframe('.freezeframe1', {
+      trigger: 'click',
+      overlay: false
+    });
+    x.toggle();
+  }
+
 
   $('#destroy').click(function() {
     $.fn.fullpage.destroy('all');

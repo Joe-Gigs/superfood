@@ -422,15 +422,30 @@ p {
 }
 
 .burger-copy {
-  font-family: 'tradegothiclt-bold', sans-serif;
-  font-size: 19px;
+    font-family: 'tradegothiclt-bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ee2316;
+}
+.burger-copy::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.3rem solid #ee2316;
+  width: 4rem;
+  margin: -13px 1rem;
+  transform: translateY(-1rem);
 }
 
-#gif-burger {
-  position: absolute;
-  bottom: 37vh;
-  right: 29vw;
+
+
+#final-burger {
+    position: absolute;
+    bottom: 33vh;
+    right: 38vw;
+    width: 24vw;
 }
+  
+
 
 #test-btn {
   position: relative;
