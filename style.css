@@ -146,6 +146,22 @@ h3 {
   -o-animation: fadein 2s;
 }
 
+#carrot {
+  position: absolute;
+  right: 14vw;
+  width: 200px;
+  height: 200px;
+  top: 27vh;
+}
+
+#last-burg {
+  position: absolute;
+  right: 15vw;
+  width: 200px;
+  height: 200px;
+  top: 55vh;
+}
+
 #logo-smaller {
   height: 84px;
   width: 320px;
@@ -228,6 +244,19 @@ h3 {
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
+
+#line-9>p {
+  font-size: 50px;
+  color: #fe7026;
+  font-family: francis_gothicnormal, Arial, sans-serif;
+}
+
+#line-10>p {
+  font-size: 50px;
+  color: #fe7026;
+  font-family: francis_gothicnormal, Arial, sans-serif;
+}
+
 
 .main-text {
   margin-left: 24vw;
@@ -315,16 +344,34 @@ p {
   animation: slide-left 3s;
 }
 
-#our-job {}
-
 .increases {
   position: absolute;
   top:10vh;
+  right: 31vw;
+  /*opacity: 0;*/
 }
 
 .sales {
   position: absolute;
   top:18vh;
+  right: 31vw;
+  /*opacity: 0;*/
+}
+
+.proven {
+  position: absolute;
+  top:10vh;
+  right: 31vw;
+  /*opacity: 0;*/
+
+}
+
+.hungry {
+  position: absolute;
+  top:18vh;
+  right: 29vw;
+  /*opacity: 0;*/
+  
 }
 
 .fp-viewing-2 #our-job>p {
@@ -438,6 +485,7 @@ p {
   font-size: 20px;
   font-weight: bold;
   color: #ee2316;
+  opacity: 1;
 }
 
 .burger-copy::after {
@@ -449,6 +497,25 @@ p {
   transform: translateY(-1rem);
 }
 
+#site-visits {
+  position: relative;
+  top: 90px;
+}
+
+#boost {
+  
+}
+
+#roi {
+  position: relative;
+  bottom: 49px;
+}
+
+#e-com {
+  position: relative;
+  top: -85px;
+}
+
 #final-burger {
   position: absolute;
   bottom: 100vh;
@@ -458,9 +525,25 @@ p {
   opacity: 0;
 }
 
-#test-btn {
+.circle {
+    background-color:#fff;
+    border:6px solid black;    
+    height:30px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:30px;
+}
+
+#circle-1 {
   position: relative;
-  margin-left: 145vh;
+  right: -43vw;
+}
+
+#circle-2 {
+  position: relative;
+  right: -27vw;
+  top: 10vh;
 }
 
 

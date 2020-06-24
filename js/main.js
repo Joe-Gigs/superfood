@@ -131,11 +131,8 @@ $(document).ready(function() {
   });
 
 
-  let $nav = $('.header-top'); // NEED TO WORK ON THIS NEXT
+  let $nav = $('.header-top'); 
   $nav.hide();
-
-
-  // let gifBurger = "SUPERFOOD_ASSETS/GIFS/burger-render-pixelart.gif";
 
   let $burgerBunTop = $('#bun-top');
   let $tomato = $('#tomato');
@@ -158,9 +155,12 @@ $(document).ready(function() {
   let $finalBurger = $('#final-burger')
 
   //The afterLoad callback is fired once a section is loaded and the onLeave callback once a user leaves it.
-  let showBurger = false;
+
 
   //+ = down
+
+  let $burgerCopy = $('.burger-copy');
+
 
   function collapseBurger() {
     // $burgerBunTop.animate({
@@ -190,69 +190,89 @@ $(document).ready(function() {
 
   };
 
+  let burgerCollapsed = false;
+  let $increases = $('.increases');
+  let $sales = $('.sales');
   const fullPage = new fullpage('#fullpage', {
+    licenseKey: 'TQAhv4X^i7',
     scrollingSpeed: 3000,
 
     onLeave: function(origin, destination, direction) {
       console.log('origin:', origin.index);
       console.log('destination:', destination.index);
       console.log('direction:', direction)
-      console.log(showBurger);
       switch (origin.index) {
-        case 3:
+        case 0:
           if (direction == 'down') {
+            $nav.delay(400).show(400);
+          }
+          break;
 
-            showBurger = false;
+        case 1:   
+          if (direction == 'up') {
+            $nav.delay(400).hide(100);
+          }
+
+          break;
+        case 3:
+          if (direction == 'down' && burgerCollapsed == false) {
+
             $burgerBunTop.delay(400).show(400);
             $tomato.delay(600).show(400);
             $cheese.delay(800).show(400);
             $burgerPatty.delay(1000).show(400);
             $lettuce.delay(1200).show(400);
             $burgerBunBottom.delay(1400).show(400);
-            showBurger = true;
 
           }
+
           break;
-        case 4:
-          collapseBurger();
-            // $finalBurger.delay(1000).show(400);
-
-
-            // $finalBurger.animate({
-            //      opacity: '1'
-            // }, 5000)
-
-            // $finalBurger.css({'opacity':1})
-
-          }
+          case 4:
+            if (direction == 'up' && burgerCollapsed == false) {
+              $burgerBunTop.delay(800).hide(100);
+              $tomato.delay(700).hide(100);
+              $cheese.delay(600).hide(100);
+              $burgerPatty.delay(500).hide(100);
+              $lettuce.delay(400).hide(100);
+              $burgerBunBottom.delay(300).hide(100);
+            }
+            if (direction == 'down' && burgerCollapsed == false) {
+              collapseBurger();
+              $burgerCopy.css({
+                'opacity': 0
+              });
+              burgerCollapsed = true;
+            }
+        }
     },
     afterLoad: function(origin, direction, destination) {
+
       switch (origin.index) {
         case 4:
-          $finalBurger.css({'opacity':1})
+          if (burgerCollapsed == true) {
+            // $increases.css({
+            //   'opacity': 1
+            // })
 
-        $finalBurger.animate({
-                 bottom: '-=80vh'
+            // $sales.css({
+            //   'opacity': 1
+            // })
+
+            $finalBurger.css({
+              'opacity': 1
+            })
+
+            $finalBurger.animate({
+              bottom: '-=80vh'
             }, 500)
-          
-        
+
+          }
+        }
       }
-
-    }
   });
-
 
   const btn = document.getElementById('test-btn');
   let wholeBurger = document.getElementById('whole-burger');
-
-  function toggleGif() {
-    console.log('function working');
-    let x = new Freezeframe('.freezeframe1', {
-      trigger: 'click',
-      overlay: false
-    });
-    x.toggle();
-  }
 
 
   $('#destroy').click(function() {
@@ -271,11 +291,5 @@ $(document).ready(function() {
   });
 
 
-
-
-  //////////possibly delete this
-  function hasClass(ele, cls) {
-    return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-  }
 
 }); //end of jquery function
