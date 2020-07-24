@@ -212,8 +212,8 @@ $(document).ready(function() {
           if (direction == 'up') {
             $nav.delay(400).hide(100);
           }
-
           break;
+          
         case 3:
           if (direction == 'down' && burgerCollapsed == false) {
 

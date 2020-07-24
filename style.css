@@ -167,6 +167,14 @@ h3 {
   width: 320px;
 }
 
+#pop-1 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 36vw;
+  top: 31vh;
+}
+
 
 /*.fp-viewing-0 .header-top  {
   display: none;
@@ -520,19 +528,19 @@ p {
   position: absolute;
   bottom: 100vh;
   right: 38vw;
-  width: 24vw;
+  width: 486px;
   /*display: none;*/
   opacity: 0;
 }
 
 .circle {
-    background-color:#fff;
-    border:6px solid black;    
-    height:30px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    width:30px;
+  background-color:#fff;
+  border:6px solid black;    
+  height:30px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:30px;
 }
 
 #circle-1 {
