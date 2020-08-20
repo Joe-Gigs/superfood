@@ -168,11 +168,23 @@ h3 {
 }
 
 #pop-1 {
-  width: 500px;
-  height: 500px;
+    width: 645px;
+    height: 645px;
+    position: absolute;
+    left: 29vw;
+    top: 12vh;
+}
+
+.happy {
   position: absolute;
-  left: 36vw;
-  top: 31vh;
+  right: 35vw;
+  top: 84vh;
+}
+
+.turning {
+  position: absolute;
+  right: 40vw;
+  top: 76vh;
 }
 
 
@@ -382,6 +394,9 @@ p {
   
 }
 
+
+
+
 .fp-viewing-2 #our-job>p {
   animation: slide-right 3s;
 }
@@ -552,6 +567,10 @@ p {
   position: relative;
   right: -27vw;
   top: 10vh;
+}
+
+#popsicle-text {
+
 }
 
 

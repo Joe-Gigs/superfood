@@ -190,6 +190,15 @@ $(document).ready(function() {
 
   };
 
+  function swapText(id) {
+    let text = document.getElementById(id);
+
+    
+    text.style.display = 'none';
+  };
+
+  //swapText('popsicle-text')
+
   let burgerCollapsed = false;
   let $increases = $('.increases');
   let $sales = $('.sales');
