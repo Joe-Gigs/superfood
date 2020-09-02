@@ -175,9 +175,15 @@ h3 {
     top: 12vh;
 }
 
+#gif-burger {
+  position: absolute;
+  top: -30vh;
+  left: -8vw;
+}
+
 .happy {
   position: absolute;
-  right: 35vw;
+  right: 33vw;
   top: 84vh;
 }
 
@@ -510,6 +516,8 @@ p {
   color: #ee2316;
   opacity: 1;
 }
+
+
 
 .burger-copy::after {
   display: inline-block;

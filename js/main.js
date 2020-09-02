@@ -91,7 +91,7 @@ $(document).ready(function() {
   let yellowSlideApple1 = anime({
     targets: "#apple-fp3-1",
     translateY: "20vh",
-    duration: 300,
+    duration: 425,
     loop: true,
     direction: "alternate",
     easing: "easeInCubic",
@@ -105,7 +105,7 @@ $(document).ready(function() {
   let yellowSlideApple2 = anime({
     targets: "#apple-fp3-2",
     translateY: "20vh",
-    duration: 200,
+    duration: 350,
     loop: true,
     direction: "alternate",
     easing: "easeInCubic",
@@ -119,7 +119,7 @@ $(document).ready(function() {
   let yellowSlideApple3 = anime({
     targets: "#apple-fp3-3",
     translateY: "20vh",
-    duration: 300,
+    duration: 400,
     loop: true,
     direction: "alternate",
     easing: "easeInCubic",
