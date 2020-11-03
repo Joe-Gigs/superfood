@@ -10,6 +10,15 @@ body {
   margin-top: 1vh;
 }
 
+#popsicle-vid {
+  width: 56vw;
+  position: absolute;
+  top: 29vh;
+  right: 28vw;
+  height: 48vh;
+  }
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -168,11 +177,11 @@ h3 {
 }
 
 #pop-1 {
-    width: 645px;
-    height: 645px;
-    position: absolute;
-    left: 29vw;
-    top: 12vh;
+  width: 645px;
+  height: 645px;
+  position: absolute;
+  left: 29vw;
+  top: 12vh;
 }
 
 #gif-burger {
@@ -184,13 +193,13 @@ h3 {
 .happy {
   position: absolute;
   right: 33vw;
-  top: 84vh;
+  top: 86vh;
 }
 
 .turning {
   position: absolute;
   right: 40vw;
-  top: 76vh;
+  top: 78vh;
 }
 
 
@@ -204,7 +213,7 @@ h3 {
   height: 70px;
   padding: 0 67px;
   position: fixed;
-  top: 23px;
+  top: 41px;
   width: 100%;
   z-index: 12;
   box-sizing: border-box;
@@ -212,7 +221,7 @@ h3 {
 }
 
 #line-1>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
@@ -222,7 +231,7 @@ h3 {
 }
 
 #line-2>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
@@ -232,7 +241,7 @@ h3 {
 }
 
 #line-3>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
@@ -242,57 +251,57 @@ h3 {
 }
 
 #line-4>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #fffb00;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 #line-5>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 #line-6>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 #line-7>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 #line-8>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #ff0e4c;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 #line-9>p {
-  font-size: 50px;
+  font-size: 55px;
   color: #fe7026;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
 #line-10>p {
-  font-size: 50px;
+  font-size: 55px;
   color: #fe7026;
   font-family: francis_gothicnormal, Arial, sans-serif;
 }
 
-
 .main-text {
   margin-left: 24vw;
+  font-size: 65px
 }
 
 .peach-text>p {
-  font-size: 50px;
+  /*font-size: 55px;*/
   color: #FFC8A9;
   font-family: francis_gothicnormal, Arial, sans-serif;
-  margin-left: 14vw;
+  margin-left: -4vw;
 }
 
 .fp-viewing-1 #line-4>p {
@@ -372,36 +381,31 @@ p {
 
 .increases {
   position: absolute;
-  top:10vh;
+  top: 10vh;
   right: 31vw;
   /*opacity: 0;*/
 }
 
 .sales {
   position: absolute;
-  top:18vh;
+  top: 18vh;
   right: 31vw;
   /*opacity: 0;*/
 }
 
 .proven {
   position: absolute;
-  top:10vh;
+  top: 10vh;
   right: 31vw;
   /*opacity: 0;*/
-
 }
 
 .hungry {
   position: absolute;
-  top:18vh;
+  top: 18vh;
   right: 29vw;
   /*opacity: 0;*/
-  
 }
-
-
-
 
 .fp-viewing-2 #our-job>p {
   animation: slide-right 3s;
@@ -517,8 +521,6 @@ p {
   opacity: 1;
 }
 
-
-
 .burger-copy::after {
   display: inline-block;
   content: "";
@@ -533,9 +535,7 @@ p {
   top: 90px;
 }
 
-#boost {
-  
-}
+#boost {}
 
 #roi {
   position: relative;
@@ -557,29 +557,28 @@ p {
 }
 
 .circle {
-  background-color:#fff;
-  border:6px solid black;    
-  height:30px;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  width:30px;
+  background-color: #fff;
+  border: 6px solid black;
+  height: 30px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 30px;
 }
 
 #circle-1 {
   position: relative;
-  right: -43vw;
+  right: -39vw;
 }
 
 #circle-2 {
   position: relative;
-  right: -27vw;
+  right: -18.4vw;
   top: 10vh;
+  /*background-color: #000000;*/
 }
 
-#popsicle-text {
-
-}
+#popsicle-text {}
 
 
 /*animations*/

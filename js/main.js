@@ -129,7 +129,7 @@ $(document).ready(function() {
       delay: 50
     }
   });
-
+  
 
   let $nav = $('.header-top'); 
   $nav.hide();
@@ -140,6 +140,8 @@ $(document).ready(function() {
   let $burgerPatty = $('#burger-patty');
   let $lettuce = $('#lettuce');
   let $burgerBunBottom = $('#bun-bottom');
+  let $turningText = $('.turning');
+  let $happyText = $('.happy');
 
   const completeBurger = [
     $burgerBunTop,
@@ -160,6 +162,14 @@ $(document).ready(function() {
   //+ = down
 
   let $burgerCopy = $('.burger-copy');
+
+
+  $turningText.hide();
+  $happyText.hide();
+  function revealPopsicleText() {
+    $turningText.show();
+    $happyText.show();
+  };
 
 
   function collapseBurger() {
@@ -202,6 +212,8 @@ $(document).ready(function() {
   let burgerCollapsed = false;
   let $increases = $('.increases');
   let $sales = $('.sales');
+  let vidClipBurg = document.getElementById("burger-vid");
+  let vidClipPopsicle = document.getElementById("popsicle-vid");
   const fullPage = new fullpage('#fullpage', {
     licenseKey: 'TQAhv4X^i7',
     scrollingSpeed: 3000,
@@ -220,30 +232,22 @@ $(document).ready(function() {
         case 1:   
           if (direction == 'up') {
             $nav.delay(400).hide(100);
+
           }
           break;
           
         case 3:
-          if (direction == 'down' && burgerCollapsed == false) {
-
-            $burgerBunTop.delay(400).show(400);
-            $tomato.delay(600).show(400);
-            $cheese.delay(800).show(400);
-            $burgerPatty.delay(1000).show(400);
-            $lettuce.delay(1200).show(400);
-            $burgerBunBottom.delay(1400).show(400);
+          if (direction == 'down') {
+            vidClipBurg.play();
 
           }
 
           break;
           case 4:
-            if (direction == 'up' && burgerCollapsed == false) {
-              $burgerBunTop.delay(800).hide(100);
-              $tomato.delay(700).hide(100);
-              $cheese.delay(600).hide(100);
-              $burgerPatty.delay(500).hide(100);
-              $lettuce.delay(400).hide(100);
-              $burgerBunBottom.delay(300).hide(100);
+            if (direction == 'down') {
+              vidClipPopsicle.play();
+              setTimeout(revealPopsicleText, 4500);
+              
             }
             if (direction == 'down' && burgerCollapsed == false) {
               collapseBurger();
@@ -298,6 +302,7 @@ $(document).ready(function() {
     let color = $(el).attr('data-background-color');
     $target.css('background-color', color);
   });
+
 
 
 
